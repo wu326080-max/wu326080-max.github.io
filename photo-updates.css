@@ -1,0 +1,16 @@
+/* Six memories form two balanced rows on desktop. */
+@media (min-width:701px) {
+  .photo-grid .polaroid:nth-child(4) { grid-column:span 2; }
+}
+.mini-collage-four {
+  aspect-ratio:3/4;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  grid-template-rows:repeat(2,minmax(0,1fr));
+}
+.mini-collage-four img,
+.mini-collage-four img:first-child {
+  grid-row:auto;
+  min-height:0;
+  object-fit:contain;
+  object-position:center;
+}
